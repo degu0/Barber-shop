@@ -1,0 +1,122 @@
+.division {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+
+hr {
+    width: 30%;
+}
+
+#background {
+    height: 90vh;
+    background-color: brown;
+}
+
+.title_background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.welcome {
+    width: 40%;
+    margin-left: 150px;
+}
+
+
+.images_welcome{
+    display: flex;
+    gap: 35px;
+}
+
+.images_example {
+    background-color: green;
+    height: 150px;
+    width: 100px;
+}
+.images_example_hours {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+
+#service {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title_service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_images{
+    display: flex;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+.services {
+    background-color: green;
+    height: 150px;
+    width: 100px;
+}
+
+
+#hair-cut {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_hair_cut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.imagens_models {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+
+.text {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.text_example{
+    background-color: green;
+    height: 100px;
+    width: 200px;
+}
+

@@ -40,3 +40,7 @@ nav ul li span, a {
     justify-content: space-around;
     width: 150px;
 }
+
+#logo {
+    width: 50%;
+}

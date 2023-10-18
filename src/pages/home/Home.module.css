@@ -1,16 +1,20 @@
 .division {
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     position: relative;
 }
 
 hr {
     width: 30%;
+    color:#6A442F;
 }
 
 #background {
     height: 90vh;
-    background-color: brown;
+    background-image: url('../../image/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .title_background{
@@ -23,40 +27,90 @@ hr {
     transform: translate(-50%,-50%);
 }
 
+.title_background h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+}
+
+.title_background h4 {
+    color: white;
+    font-weight: 200;
+}
+
+
 #about {
+    height: 70vh;
     display: flex;
     align-items: center;
     column-gap: 50px;
+    background-color: #343434;
 }
 
 .welcome {
     width: 40%;
-    margin-left: 150px;
+    margin-left: 85px;
+    color: rgb(213, 213, 213);
+    height: 250px;
 }
 
+.welcome h1 {
+    color: rgb(235, 235, 235);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.welcome h2 {
+    color: #6A442F;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
 
 .images_welcome{
     display: flex;
-    gap: 35px;
+    gap: 15px;
 }
 
-.images_example {
-    background-color: green;
-    height: 150px;
-    width: 100px;
+.images_welcome img {
+    height: 230px;
 }
-.images_example_hours {
-    background-color: red;
-    height: 100px;
-    width: 100px;
+
+
+.working_hours {
+    height: 250px;
+}
+
+.working_hours h2 {
+    color: rgb(235, 235, 235);
+    font-weight: 500;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+}
+
+.week ul {
+    list-style: none;
+    padding: 0;
+    font-weight: 500;
+}
+
+#date {
+    color: gray;
+}
+#hours {
+    color: #6A442F;
 }
 
 
 #service {
+    height: 95vh;
     display: flex;
     align-items: center; 
     flex-direction: column;
     justify-content: space-around;
+    background-color: #111111;
 }
 
 .title_service {
@@ -65,45 +119,132 @@ hr {
     align-items: center;
 }
 
-.services_images{
-    display: flex;
-    grid-template-columns: auto auto auto;
-    gap: 50px;
+.title_service h2 {
+    font-size: 1rem;
+    color: #6A442F;
+    font-weight: 300;
+}
+
+.title_service h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
 }
 
 .services {
-    background-color: green;
-    height: 150px;
-    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
+.shadow_service{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_service {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_service h3 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+}
+
+.information_service {
+    height: 100px;
+    width: 80%;
+}
+.information_service p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(189, 188, 188);
+    text-align: center;
+    font-weight: 300;
+}
+
+.div_services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+#shaves {
+    background-image: url('../../image/Service-Shaves.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hair_cut_service {
+    background-image:  url('../../image/Service-Hair-Cut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hair_wash {
+    
+    background-image:  url('../../image/Service-Hair-Wash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#face_mask {
+    background-image: url('../../image/Service-Face-Mask.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
 #hair-cut {
-    height: 80vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #111111;
 }
 
 .title_hair_cut {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
+}
+
+.title_hair_cut h2 {
+    font-size: 1rem;
+    color: #6A442F;
+    font-weight: 300;
+}
+
+.title_hair_cut h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
 }
 
 .images {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 10px;
     width: 100%;
-    margin-bottom: 30px;
+    margin: 25px 0 40px;
 }
 
-.imagens_models {
-    background-color: green;
-    height: 100px;
-    width: 100px;
+.images img {
+    height: 180px;
 }
 
 .text {
@@ -114,9 +255,37 @@ hr {
     width: 100%;
 }
 
-.text_example{
-    background-color: green;
+.text_hair_cut{
     height: 100px;
-    width: 200px;
+    display: flex;
+    justify-content: space-around;
 }
+
+.text_hair_cut img {
+    height: 50px;
+    width: 50px;
+}
+
+.text_model {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.text_model h2, .text_model p {
+    margin: 0;
+    font-size: 1rem;
+    margin: 0 0 8px 10px;
+}
+
+.text_model h2 {
+    color: rgb(223, 223, 223);
+    font-weight: 500;
+}
+
+.text_model p {
+    color: rgb(121, 121, 121);
+    font-weight: 300;
+}
+
 

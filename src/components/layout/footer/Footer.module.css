@@ -5,12 +5,82 @@
     text-align: center;
 }
 
-.copy_right {
-    font-size: 17px;
-    margin-top: 1em;
+#logo {
+    width: 46%;
 }
 
-.copy_right span {
-    color: #ffbb33;
-    font-weight: bold;
+.informations{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about{
+    width: 300px;
+}
+
+.about h1 {
+    font-weight: 400;
+}
+
+.working_hours {
+    height: 250px;
+}
+
+.working_hours h2 {
+    color: rgb(235, 235, 235);
+    font-weight: 400;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+}
+
+.week ul {
+    list-style: none;
+    padding: 0;
+    font-weight: 500;
+}
+
+#date {
+    color: gray;
+}
+#hours {
+    color: #6A442F;
+}
+
+
+.place{
+    height: 150px;
+    width: 100px;
+}
+
+.place ul {
+    list-style: none;
+}
+
+.place ul li a {
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.place ul li a:hover {
+    text-decoration: none;
+}
+
+.links {
+    width: 300px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+}
+
+.copy_right {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 1em;
 }

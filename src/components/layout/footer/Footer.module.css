@@ -61,7 +61,13 @@
 
 .place ul li a {
     text-decoration: underline;
-    font-weight: 300;
+    cursor: pointer;
+    color: rgb(237, 237, 237);
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0 5px;
 }
 
 .place ul li a:hover {
@@ -79,7 +85,18 @@
     height: 100px;
 }
 
+.redes a {
+    cursor: pointer;
+    color: rgb(237, 237, 237);
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
 .copy_right {
+
     font-size: 17px;
     font-weight: 400;
     margin-top: 1em;

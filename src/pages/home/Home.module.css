@@ -5,8 +5,7 @@
 }
 
 hr {
-    width: 30%;
-    color:#6A442F;
+    width: 35%;
 }
 
 #background {
@@ -213,6 +212,7 @@ hr {
     align-items: center;
     flex-direction: column;
     background-color: #111111;
+    padding-bottom: 20px;
 }
 
 .title_hair_cut {

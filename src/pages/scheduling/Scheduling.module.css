@@ -1,9 +1,8 @@
-hr {
-    width: 30%;
+.scheduling {
+    background-color: #2a2a2a;
 }
 
-
-.title{
+.title_scheduling {
     height: 30vh;
     width: 100%;
     display: flex;
@@ -12,7 +11,13 @@ hr {
     justify-content: center;
 }
 
-.dados{
+.title_scheduling h1 {
+    color: rgb(223, 222, 222);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.dados {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -20,24 +25,79 @@ hr {
     align-items: center;
 }
 
-.example_place{ 
-    height: 70%;
-    width: 70%;
-    background-color: green;
-}
 
-.plus{
+.plus {
     display: flex;
     justify-content: center;
     height: 30vh;
     width: 100%;
 }
 
-button {
-    width: 50%;
-    height: 35px;
-    background-color: yellow;
+.button {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #242424;
+    text-align: center;
     border: none;
     border-radius: 8px;
+    width: 50%;
+    height: 40px;
+    transition: .3s;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #6a442fe3;
+    box-shadow: 0 0 0 5px #6a442f6e;
+    color: #fff;
+}
+
+
+table {
+    border-collapse: collapse;
+    max-height: 500px;
+    width: 69.2vw;
+    font-family: 'Roboto Slab', serif;
+}
+
+td,
+th {
+    border: 1px solid rgba(0, 0, 0, 0.823);
+    min-width: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    background-color: #59433E;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+thead,
+tbody {
+    background-color: #59433E;
+    color: rgba(222, 222, 222, 0.928);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+thead>tr>th {
+    background-color: #59433E;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: #a6816c;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #8C6C5A;
 }
 

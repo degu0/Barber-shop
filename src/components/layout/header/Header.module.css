@@ -3,7 +3,6 @@
     background: #1F1F1F;
     display: flex;
     justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
     max-width: 100vw;
     width: 100%;
 }
@@ -22,7 +21,7 @@ nav ul li {
 }
 
 nav ul li a,
-nav ul li span, a {
+nav ul li span, .link {
     cursor: pointer;
     color: #ededed;
     display: block;

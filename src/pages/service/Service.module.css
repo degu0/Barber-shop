@@ -1,0 +1,89 @@
+.background {
+    background-color: #373636;
+}
+
+.title_service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_service h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(224, 224, 224);
+}
+
+.barber_service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    padding: 15px 0;
+}
+
+
+.image_service {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_service h3 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+}
+
+
+#shaves {
+    background-image: url('../../image/Service-Shaves.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hair_cut_service {
+    background-image:  url('../../image/Service-Hair-Cut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hair_wash {
+    
+    background-image:  url('../../image/Service-Hair-Wash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#face_mask {
+    background-image: url('../../image/Service-Face-Mask.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.information_service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information_service h2, p {
+    margin: 10px 50px;
+    color: rgb(221, 221, 221);
+}
+
+
+#service_2, #service_4 {
+    order: 1;
+}

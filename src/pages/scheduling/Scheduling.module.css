@@ -2,6 +2,10 @@
     background-color: #2a2a2a;
 }
 
+hr {
+    width: 50%;
+}
+
 .title_scheduling {
     height: 30vh;
     width: 100%;

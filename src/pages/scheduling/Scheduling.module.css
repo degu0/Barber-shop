@@ -105,3 +105,15 @@ tbody>tr:nth-child(even) {
     background-color: #8C6C5A;
 }
 
+
+@media screen and (max-width: 550px) {
+    .title_scheduling h1 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title_scheduling h1 {
+        font-size: 0.8rem;
+    }
+}

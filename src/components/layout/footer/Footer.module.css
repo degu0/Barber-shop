@@ -101,3 +101,24 @@
     font-weight: 400;
     margin-top: 1em;
 }
+
+
+@media screen and (max-width: 550px) {
+    .links {
+        display: none;
+    }
+
+    .about {
+        width: 50%;
+    }
+    .about h1 {
+        font-size: 20px;
+    }
+
+    #logo {
+        width: 70%;
+    }
+    .working_hours {
+        font-size: 13px;
+    }
+}

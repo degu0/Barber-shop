@@ -119,29 +119,27 @@ const Home: React.FC = () => {
                     <hr />
                 </div>
                 <div className={styles.images}>
-                    <img src={hair1} alt="Model hair cut" />
-                    <img src={hair2} alt="Model hair cut" />
-                    <img src={hair3} alt="Model hair cut" />
-                    <img src={hair4} alt="Model hair cut" />
-                    <img src={hair5} alt="Model hair cut" />
-                    <img src={hair6} alt="Model hair cut" />
+                    <img src={hair1} alt="Model hair cut" id={styles["img_1"]}/>
+                    <img src={hair2} alt="Model hair cut" id={styles["img_2"]}/>
+                    <img src={hair4} alt="Model hair cut" id={styles["img_3"]}/>
+                    <img src={hair6} alt="Model hair cut" id={styles["img_4"]}/>
                 </div>
                 <div className={styles.text}>
-                    <div className={styles.text_hair_cut}>
+                    <div className={styles.text_hair_cut} id={styles["hair_cut_1"]}>
                         <img src={razor} alt="icon" />
                         <div className={styles.text_model}>
                             <h2>10 YEARS EXPERIENCE</h2>
                             <p>We have a unique approach to our work, founded on planning and insight development . We take time out to</p>
                         </div>
                     </div>
-                    <div className={styles.text_hair_cut}>
+                    <div className={styles.text_hair_cut} id={styles["hair_cut_2"]}>
                         <img src={hairDress} alt="icon" />
                         <div className={styles.text_model}>
                             <h2>HYGIENIC ENVIRONMENTS</h2>
                             <p>We have a unique approach to our work, founded on planning and insight development . We take time out to</p>
                         </div>
                     </div>
-                    <div className={styles.text_hair_cut}>
+                    <div className={styles.text_hair_cut} id={styles["hair_cut_3"]}>
                         <img src={barberPole} alt="icon" />
                         <div className={styles.text_model}>
                             <h2>SKIN HEALTH</h2>

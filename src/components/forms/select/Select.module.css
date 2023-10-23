@@ -43,3 +43,10 @@
 .error { 
     border: 2px solid #ff6666;
 }
+
+
+@media screen and (max-width: 425px) {
+    .input {
+        width: 96%;
+    }
+}

@@ -24,6 +24,7 @@ hr {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 100%;
 }
 
 .title_background h1 {
@@ -48,7 +49,7 @@ hr {
 
 .welcome {
     width: 40%;
-    margin-left: 85px;
+    margin-left: 6%;
     color: rgb(213, 213, 213);
     height: 250px;
 }
@@ -131,7 +132,8 @@ hr {
 }
 
 .services {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-around;
     width: 100%;
 }
@@ -235,9 +237,11 @@ hr {
 }
 
 .images {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-content: space-around;
+    justify-items: center;
     gap: 10px;
     width: 100%;
     margin: 25px 0 40px;
@@ -269,7 +273,6 @@ hr {
 .text_model {
     display: flex;
     flex-direction: column;
-    width: 280px;
 }
 
 .text_model h2, .text_model p {
@@ -287,5 +290,81 @@ hr {
     color: rgb(121, 121, 121);
     font-weight: 300;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .working_hours {
+        display: none;
+    }
+
+    #service {
+        height: 160vh;
+    }
+
+    #hair-cut {
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #hair_cut_1 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    
+    .title_background h1{ 
+        font-size: 2rem;
+    }
+    
+    .images_welcome {
+        display: none;
+    }
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+    .welcome p {
+        text-align: center;
+        margin: 0;
+    }
+
+
+    #service {
+        height: 270vh;
+    }
+
+    #hair-cut {
+        height: 110vh;
+    }
+
+    #hair_cut_3, #img_1, #img_2, #img_3 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .title_background h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .title_hair_cut h1, .title_service h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
 
 

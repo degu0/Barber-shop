@@ -39,3 +39,11 @@ hr {
     box-shadow: 0 0 0 5px #6a442f6e;
     color: #fff;
 }
+
+@media screen and (max-width: 1024px) {
+    .cadastre {
+        height: 135vh;
+    }
+}
+
+

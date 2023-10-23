@@ -4,12 +4,17 @@ import Logo from '../../../image/logo.png'
 import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
-    return(
+    return (
         <header className={styles.header}>
             <div>
                 <NavLink to='/' className={styles.logo}>
-                    <img src={Logo} alt="logo" id={styles["logo"]}  />
+                    <img src={Logo} alt="logo" id={styles["logo"]} />
                 </NavLink>
+            </div>
+            <div className={styles.menu_toggle}>
+                <div className={styles.one}></div>
+                <div className={styles.two}></div>
+                <div className={styles.three}></div>
             </div>
             <nav>
                 <ul>

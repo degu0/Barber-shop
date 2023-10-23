@@ -43,3 +43,118 @@ nav ul li span, .link {
 #logo {
     width: 50%;
 }
+
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+        
+        border-radius: 10px;
+    }
+
+    .menu_toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* fullscreen */
+    .header.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--corFundo);
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header.on nav {
+        display: block;
+    }
+
+    .header.on .menu_toggle {
+        position: absolute;
+        right: 81%;
+        top: 18px;
+    }
+
+    .header.on .menu_toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .header.on .menu_toggle .two {
+        opacity: 0;
+    }
+
+    .header.on .menu_toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .header.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    header.on nav ul li {
+        margin: 4rem;
+    }
+
+    .header.on nav ul a,
+    .header.on nav ul span {
+        transition-duration: 0.5s;
+        font-size: 3.5rem;
+        line-height: 4rem;
+        display: block;
+    }
+
+    .header.on nav ul li:hover>ul {
+        display: block;
+    }
+
+    .header.on nav ul ul {
+        background-color: var(--corFundoDrop);
+        display: none;
+        position: relative;
+        top: 0;
+        z-index: 1;
+        width: 100vw;
+    }
+
+    .header.on nav ul ul li {
+        width: 100%;
+        border-top: 1px solid var(--corLinha);
+        margin: 0;
+    }
+
+    .header.on nav ul ul li a {
+        display: block;
+        line-height: 2rem;
+        padding: 3rem 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:520px) {
+    #searchNav {
+        width: 20rem;
+    }
+}

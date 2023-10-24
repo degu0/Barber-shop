@@ -1,6 +1,5 @@
 import React from 'react';
 
-import * as Yup from 'yup';
 
 import styles from './Cadastre.module.css';
 
@@ -30,20 +29,11 @@ const Cadastre: React.FC = () => {
         servico: '',
     };
 
-    const validationSchema = Yup.object().shape({
-        nome: Yup.string().required('Campo obrigatório'),
-        numero: Yup.string().required('Campo obrigatório'),
-        data: Yup.string().required('Campo obrigatório'),
-        hora: Yup.string().required('Campo obrigatório'),
-        servico: Yup.string().required('Campo obrigatório'),
-    });
-
     const onSubmit = async (values: Scheduling, { resetForm }: {
         resetForm: () => void
     }) => {
         try {
             createOrUpdateScheduling(values);
-            console.log(values);
             resetForm();
             navigate('/scheduling');
             alert('Formulario enviado com sucesso!');
@@ -62,7 +52,6 @@ const Cadastre: React.FC = () => {
             </div>
             <Form
                 initialValues={agendamento || initialValues}
-                validationSchema={validationSchema}
                 onSubmit={onSubmit}
             >
                 {({ errors, touched }) => (

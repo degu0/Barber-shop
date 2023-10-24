@@ -9,7 +9,7 @@ import Form from '../../../components/forms/form/Form';
 
 
 
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Scheduling, createOrUpdateScheduling } from '../../../service/schedulingService';
 import Input from '../../../components/forms/input/Input';
 import Select from '../../../components/forms/select/Select';
@@ -57,7 +57,7 @@ const Cadastre: React.FC = () => {
     return (
         <div className={styles.cadastre}>
             <div className={styles.title_cadastre}>
-                <h1>Agendamento</h1>
+                <h1>AGENDAMENTO</h1>
                 <hr />
             </div>
             <Form
@@ -86,12 +86,22 @@ const Cadastre: React.FC = () => {
                             errors={errors.data}
                             touched={touched.data}
                         />
-                        <Input
+                        <Select
                             label='Hora'
                             name='hora'
-                            type='time'
-                            errors={errors.hora}
-                            touched={touched.hora}
+                            options={[
+                                { value: '8:00', label: '8:00' },
+                                { value: '9:00', label: '9:00' },
+                                { value: '10:00', label: '10:00' },
+                                { value: '11:00', label: '11:00' },
+                                { value: '13:00', label: '13:00' },
+                                { value: '14:00', label: '14:00' },
+                                { value: '15:00', label: '15:00' },
+                                { value: '16:00', label: '16:00' },
+                                { value: '17:00', label: '17:00' },
+                            ]}
+                            errors={errors.servico}
+                            touched={errors.servico}
                         />
                         <Select
                             label='Serviço'

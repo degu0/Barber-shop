@@ -25,7 +25,7 @@ const Select: React.FC<SelectProps> = ({ label, name, options, errors, touched }
                 {label}:
             </label>
             <Field as='select' name={name} id={name} className={`${styles.input} ${errorStyle}`}>
-                <option value=''>Selecione uma opcao</option>
+                <option value=''>Selecione uma opção</option>
                 {options.map((option) => (
                     <option key={option.value} value={option.value}>
                         {option.label}

@@ -13,10 +13,10 @@ const Footer: React.FC = () => {
                     <a href="/">
                         <img src={logo} alt="logo" id={styles["logo"]} />
                     </a>
-                    <h1>BARBER SHOP</h1>
+                    <h1>BARBA & CO</h1>
                 </div>
                 <div className={styles.working_hours}>
-                    <h2>WORKING HOURS</h2>
+                    <h2>TRABALHO EM HORAS</h2>
                     <hr />
                     <div className={styles.week}>
                         <div id={styles["date"]}>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
             <div className={styles.redes}>
                 <a href="https://github.com/degu0" target="_blank"><BsGithub /></a>
                 <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"><BsLinkedin /></a>
-                <p className={styles.copy_right}>&copy; {new Date().getFullYear()} - BARBER SHOP</p>
+                <p className={styles.copy_right}>&copy; {new Date().getFullYear()} - BARBA & CO</p>
             </div>
         </footer>
     )

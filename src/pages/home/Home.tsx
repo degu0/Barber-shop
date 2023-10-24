@@ -7,9 +7,7 @@ import illustration2 from '../../image/illustration-2.jpg';
 
 import hair1 from '../../image/Hair-Cut-1.jpg';
 import hair2 from '../../image/Hair-Cut-2.jpg';
-import hair3 from '../../image/Hair-Cut-3.jpg';
 import hair4 from '../../image/Hair-Cut-4.jpg';
-import hair5 from '../../image/Hair-Cut-5.jpg';
 import hair6 from '../../image/Hair-Cut-6.jpeg';
 
 import razor from '../../image/razor.png';
@@ -22,13 +20,13 @@ const Home: React.FC = () => {
             <div className={styles.division} id={styles["background"]}>
                 <div className={styles.title_background}>
                     <h4>HEALTHY LIFESTYLE</h4>
-                    <h1 id={styles["title_welcome"]}>The Stylish Beard Shaved</h1>
+                    <h1 id={styles["title_welcome"]}>Transforme seu visual com estilo e expertise</h1>
                 </div>
             </div>
             <div className={styles.division} id={styles["about"]}>
                 <div className={styles.welcome}>
-                    <h2>WELCOME TO THE BOARD</h2>
-                    <h1>WE ARE BARBER SHOP</h1>
+                    <h2>BEM-VINDO AO BARBA & CO</h2>
+                    <h1>NÓS SOMOS UMA BARBEARIA</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam id necessitatibus dicta ipsum quod odio fuga magnam illo eum optio, accusantium, cupiditate autem temporibus sint alias recusandae, facere quibusdam quia?</p>
                 </div>
                 <div className={styles.images_welcome}>
@@ -36,7 +34,7 @@ const Home: React.FC = () => {
                     <img src={illustration2} alt="illustration barber shop" />
                 </div>
                 <div className={styles.working_hours}>
-                    <h2>WORKING HOURS</h2>
+                    <h2>TRABALHO EM HORAS</h2>
                     <div className={styles.week}>
                         <div id={styles["date"]}>
                             <ul>
@@ -65,15 +63,15 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.division} id={styles["service"]}>
                 <div className={styles.title_service}>
-                    <h2>LEARN MORE ABOUT US</h2>
-                    <h1>BARBER SERVICES</h1>
+                    <h2>LEIA MAIS SOBRE NÓS</h2>
+                    <h1>SERVIÇO DA BARBEARIA</h1>
                     <hr />
                 </div>
                 <div className={styles.services}>
                     <div className={styles.div_services}>
                         <div className={styles.shadow_service}>
                             <div className={styles.image_service} id={styles["shaves"]}>
-                                <h3>SHAVES</h3>
+                                <h3>BARBA</h3>
                             </div>
                         </div>
                         <div className={styles.information_service}>
@@ -83,7 +81,7 @@ const Home: React.FC = () => {
                     <div className={styles.div_services}>
                         <div className={styles.shadow_service}>
                             <div className={styles.image_service} id={styles["hair_cut_service"]}>
-                                <h3>HAIR CUT</h3>
+                                <h3>CORTE DE CABELO</h3>
                             </div>
                         </div>
                         <div className={styles.information_service}>
@@ -93,7 +91,7 @@ const Home: React.FC = () => {
                     <div className={styles.div_services}>
                         <div className={styles.shadow_service}>
                             <div className={styles.image_service} id={styles["hair_wash"]}>
-                                <h3>HAIR WASH</h3>
+                                <h3>PENTEADO</h3>
                             </div>
                         </div>
                         <div className={styles.information_service}>
@@ -103,7 +101,7 @@ const Home: React.FC = () => {
                     <div className={styles.div_services}>
                         <div className={styles.shadow_service}>
                             <div className={styles.image_service} id={styles["face_mask"]}>
-                                <h3>FACE MASK</h3>
+                                <h3>MÁSCARA</h3>
                             </div>
                         </div>
                         <div className={styles.information_service}>
@@ -114,8 +112,8 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.division} id={styles["hair-cut"]}>
                 <div className={styles.title_hair_cut}>
-                    <h2>LOOKING A BEAUTIFUL STYLE</h2>
-                    <h1>HAIR CUT MODELS</h1>
+                    <h2>PROCURANDO ESTILO DE CABELO</h2>
+                    <h1>MODELOS DE CORTES</h1>
                     <hr />
                 </div>
                 <div className={styles.images}>
@@ -128,21 +126,21 @@ const Home: React.FC = () => {
                     <div className={styles.text_hair_cut} id={styles["hair_cut_1"]}>
                         <img src={razor} alt="icon" />
                         <div className={styles.text_model}>
-                            <h2>10 YEARS EXPERIENCE</h2>
+                            <h2>10 ANOS DE EXPERIÊNCIA</h2>
                             <p>We have a unique approach to our work, founded on planning and insight development . We take time out to</p>
                         </div>
                     </div>
                     <div className={styles.text_hair_cut} id={styles["hair_cut_2"]}>
                         <img src={hairDress} alt="icon" />
                         <div className={styles.text_model}>
-                            <h2>HYGIENIC ENVIRONMENTS</h2>
+                            <h2>AMBIENTE HIGIÊNICO</h2>
                             <p>We have a unique approach to our work, founded on planning and insight development . We take time out to</p>
                         </div>
                     </div>
                     <div className={styles.text_hair_cut} id={styles["hair_cut_3"]}>
                         <img src={barberPole} alt="icon" />
                         <div className={styles.text_model}>
-                            <h2>SKIN HEALTH</h2>
+                            <h2>SAÚDE DE PELE</h2>
                             <p>We have a unique approach to our work, founded on planning and insight development . We take time out to</p>
                         </div>
                     </div>

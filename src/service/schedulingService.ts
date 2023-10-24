@@ -11,7 +11,7 @@ export interface Scheduling {
 
 
 export const createScheduling = async (agendamento: Scheduling) => {
-    const response = await api.post('/scheduling/cadastre', agendamento);
+    const response = await api.post('/scheduling', agendamento);
     return response.data;
 }
 

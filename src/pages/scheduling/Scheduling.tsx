@@ -41,7 +41,7 @@ const pageScheduling: React.FC = () => {
     return (
         <div className={styles.scheduling}>
             <div className={styles.title_scheduling}>
-                <h1>TITLE OF SCHEDULING FOR BARBER SHOP</h1>
+                <h1>AGENDAMENTO</h1>
                 <hr />
             </div>
             <div className={styles.dados}>
@@ -57,6 +57,13 @@ const pageScheduling: React.FC = () => {
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>José</td>
+                                <td>(81) 99555-1234</td>
+                                <td>16/10/2023</td>
+                                <td>15:00</td>
+                                <td>Corte de cabelo</td>
+                            </tr>
                             {agendamentos.map((item, index) => (
                                 <tr key={index}>
                                     <td>{item.nome}</td>
@@ -64,10 +71,6 @@ const pageScheduling: React.FC = () => {
                                     <td>{item.data}</td>
                                     <td>{item.hora}</td>
                                     <td>{item.servico}</td>
-                                    <td className={styles.actions}>
-                                        <button onClick={() => handleEdit(item)} >Editar</button>
-                                        <button onClick={() => handleDelete(item.id)}>Excluir</button>
-                                    </td>
                                 </tr>
                             ))}
                         </tbody>

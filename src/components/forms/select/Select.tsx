@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from './Select.module.css';
-import { Field, ErrorMessage } from "formik";
+import { Field} from "formik";
 
 interface Option {
     value: string;

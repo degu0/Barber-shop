@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Scheduling.module.css';
 
-import { NavLink, useNavigate } from "react-router-dom";
-import { Scheduling, deleteScheduling, getScheduling } from '../../service/schedulingService';
+import { NavLink } from "react-router-dom";
+import { Scheduling, getScheduling } from '../../service/schedulingService';
 
 const pageScheduling: React.FC = () => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [agendamentos, setAgendamentos] = useState<Scheduling[]>([]);
 
@@ -23,20 +23,20 @@ const pageScheduling: React.FC = () => {
         fetchScheduling();
     }, []);
 
-    const handleEdit = async (agendamentos: Scheduling) => {
-        navigate('/scheduling/cadastre', { state: agendamentos });
-    };
+    // const handleEdit = async (agendamentos: Scheduling) => {
+    //     navigate('/scheduling/cadastre', { state: agendamentos });
+    // };
 
-    const handleDelete = async (id: number) => {
-        try {
-            await deleteScheduling(id);
-            fetchScheduling();
-            alert('Agendamento excluida com sucesso!');
-        } catch (error) {
-            console.log('Erro ao excluir o agendamento', error);
-            alert('Ocorreu um erro ao excluir o agendamento');
-        }
-    }
+    // const handleDelete = async (id: number) => {
+    //     try {
+    //         await deleteScheduling(id);
+    //         fetchScheduling();
+    //         alert('Agendamento excluida com sucesso!');
+    //     } catch (error) {
+    //         console.log('Erro ao excluir o agendamento', error);
+    //         alert('Ocorreu um erro ao excluir o agendamento');
+    //     }
+    // }
 
     return (
         <div className={styles.scheduling}>
